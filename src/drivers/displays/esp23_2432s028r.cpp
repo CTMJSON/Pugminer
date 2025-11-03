@@ -61,7 +61,7 @@ void esp32_2432S028R_Init(void)
       invertColors = Settings.invertColors;           
     }  
   tft.invertDisplay(invertColors);
-  tft.setRotation(1);    
+  tft.setRotation(3);    
   tft.setSwapBytes(true); // Swap the colour byte order when rendering
   if (invertColors) {
     tft.writecommand(ILI9341_GAMMASET);
